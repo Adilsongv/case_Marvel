@@ -1,0 +1,34 @@
+<div id="container">
+    
+    <div id="box">
+
+        <form #f="ngForm">
+
+            <h1>{{title}}</h1>
+
+            <h2>{{data}}</h2>
+            <input type="text" name="txtCEP" id="txtCEP" class="form-control" ngModel #cep="ngModel" (blur)="consultarCep($event.target.value,f)" placeholder="CEP">
+            <br/>
+            <input type="text" name="txtAddress" id="txtAddress" ngModel #logradouro="ngModel"placeholder="Address">
+            
+            <input type="text" name="txtNumber" id="txtNumber" placeholder="Nº">
+            <br/>
+            <input type="text" name="txtComplement" id="txtComplement" placeholder="Complement">
+            <br/>
+            <input type="text" name="txtDistrict" id="txtDistrict" ngModel #uf="ngModel"placeholder="District">
+            
+            <input type="text" name="txtCity" id="txtCity" ngModel #cidade="ngModel"placeholder="City">
+            <br/>
+            <input type="button" name="btnLogar" value="Finish" id="btnLogar" onclick="logar()"> 
+            <br/>
+            <div id="registro">
+                <a href="#" id="btnTestar" > Login </a> <img src="assets/avancar.png" alt="seta direita"> 
+            </div>
+
+        </form>
+
+    </div>
+    
+</div>
+
+

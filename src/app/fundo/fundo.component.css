@@ -1,0 +1,17 @@
+#fundo{
+    background-image: url('/assets/fundo.png');
+    background-color: black;
+}
+#imgFundo{
+    background-image: url('/assets/fundo.png');
+    background-repeat: repeat;
+    background-size: auto;
+    text-align: center;
+    margin: -8px  ;
+    width: 1366px;
+    height: 691px;
+}
+#imgLogo{
+    background-image: url(/assets/logo.png);
+    float: left;
+}

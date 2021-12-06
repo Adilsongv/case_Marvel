@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+#container{
+    /* background-image: url("../../assets/fundo.png");
+    background-repeat: no-repeat;
+    background-size: 1360px 1065px; */
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+#box{
+    float: left;
+    box-shadow: 1px 1px black;
+    width: 300px;
+    height: 550px;
+    background-color: black;
+    border-radius: 12PX;
+    border: 3px solid white;
+    padding: 30px;
+    margin-left: 38%;
+    margin-top: 1.2%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+input[type=text]{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F7F8FA;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+input[type=password]{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F7F8FA;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+input[type=button]{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15px;
+    color: #F7F8FA;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+input::placeholder{
+    padding-left: 15px;
+}
+
+
+#txtNick,
+#txtFirst,
+#txtLast,
+#txtEmail,
+#txtContact, 
+#txtSenha {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+#btnLogar{
+    width: 190px;
+    height: 30px;
+    background-color: #ED1D24;
+    border: none;
+}
+
+#olho{
+    position: absolute;
+    margin-top: -61px;
+    margin-left: 120px;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #F7F8FA;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+h2{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F7F8FA;
+    text-align: left;
+    margin-top: -10px;
+}
+
+#registro{
+    text-align: right;
+    padding-top: 30px;
+}
+
+#registro a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F7F8FA;
+    text-decoration: none;
+}
