@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-
-#container{
-    /* background-image: url("../../assets/fundo.png");
+#container {
+    background: url("../../assets/fundo.png");
     background-repeat: no-repeat;
-    background-size: 1360px 1065px; */
-    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     font-family: 'Inter', sans-serif;
 }
 
-#box{
+#box {
     float: left;
     box-shadow: 1px 1px black;
     width: 300px;
@@ -23,7 +27,7 @@
     text-align: center;
 }
 
-input[type=text]{
+input[type=text] {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -34,7 +38,8 @@ input[type=text]{
     border: 1px solid white;
     border-radius: 6px;
 }
-input[type=button]{
+
+input[type=button] {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -46,26 +51,26 @@ input[type=button]{
     border-radius: 6px;
 }
 
-input::placeholder{
+input::placeholder {
     padding-left: 15px;
 }
 
-
 #txtCardNumber,
 #txtCardHolder,
-#txtCPF{
+#txtCPF {
     width: 300px;
     height: 30px;
     margin-bottom: 30px;
 }
-#txtValidate{
- float: left;
- width: 140px;
+
+#txtValidate {
+    float: left;
+    width: 140px;
     height: 30px;
     margin-bottom: 30px;
 }
 
-#txtCV{
+#txtCV {
     float: right;
     width: 140px;
     height: 30px;
@@ -73,21 +78,20 @@ input::placeholder{
     margin-right: -5px;
 }
 
-
-#btnLogar{
+#btnLogar {
     width: 190px;
     height: 30px;
     background-color: #ED1D24;
     border: none;
 }
 
-#olho{
+#olho {
     position: absolute;
     margin-top: -61px;
     margin-left: 120px;
 }
 
-h1{
+h1 {
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
@@ -97,7 +101,8 @@ h1{
     margin-top: -30px;
     margin-bottom: 40px;
 }
-h2{
+
+h2 {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -108,12 +113,12 @@ h2{
     margin-top: -10px;
 }
 
-#registro{
+#registro {
     text-align: right;
     padding-top: 30px;
 }
 
-#registro a{
+#registro a {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
