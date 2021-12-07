@@ -11,4 +11,5 @@ export class CepServiceService {
   buscar(cep:string){
     return this.httpCliente.get(`https://viacep.com.br/ws/${cep}/json/`)
   }
+  
 }

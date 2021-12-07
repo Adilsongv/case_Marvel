@@ -7,7 +7,7 @@
             <h1>{{title}}</h1>
 
             <h2>{{data}}</h2>
-            <input type="text" name="txtCEP" id="txtCEP" class="form-control" ngModel #cep="ngModel" (blur)="consultarCep($event.target.value,f)" placeholder="CEP">
+            <input type="text" name="txtCEP" id="txtCEP" class="form-control" ngModel #cep="ngModel" (blur)="consultarCep($event,f)" placeholder="CEP">
             <br/>
             <input type="text" name="txtAddress" id="txtAddress" ngModel #logradouro="ngModel"placeholder="Address">
             

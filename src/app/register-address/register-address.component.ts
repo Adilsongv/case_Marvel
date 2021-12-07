@@ -13,11 +13,11 @@ export class RegisterAddressComponent implements OnInit {
 
   constructor(private  cepsService: CepServiceService){}
 
-  consultarCep(valor:number, form){
-    this.cepsService.buscar(valor).subscribe((dados) => this.populaForm(dados.form));
+  consultarCep(valor:any, form:any){
+    this.cepsService.buscar(valor).subscribe((dados) => this.populaForm(dados, form));
   }
 
-  populaForm(dados, form){
+  populaForm(dados:any, form:any){
     form.setvalue({
       cep: dados.cep,
       logradouro: dados.logradouro,
