@@ -39,6 +39,7 @@ input[type=text]{
     background-color: black;
     border: 1px solid white;
     border-radius: 6px;
+    padding-left: 10px;
 }
 input[type=password]{
     font-style: normal;
@@ -50,6 +51,7 @@ input[type=password]{
     background-color: black;
     border: 1px solid white;
     border-radius: 6px;
+    padding-left: 10px;
 }
 input[type=button]{
     font-style: normal;

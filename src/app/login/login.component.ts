@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { NgModule } from '@angular/core';
 
+
 const maskConfig: Partial<IConfig> = {
   validation: false,
 };

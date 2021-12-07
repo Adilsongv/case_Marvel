@@ -38,6 +38,7 @@ input[type=text]{
     background-color: black;
     border: 1px solid white;
     border-radius: 6px;
+    padding-left: 10px;
 }
 input[type=button]{
     font-style: normal;
@@ -64,24 +65,24 @@ input::placeholder{
 }
 #txtDistrict{
  float: left;
- width: 140px;
+ width: 135px;
     height: 30px;
     margin-bottom: 30px;
 }
 
 #txtCity{
     float: right;
-    width: 140px;
+    width: 135px;
     height: 30px;
     margin-bottom: 30px;
-    margin-right: -5px;
+    margin-right: -13px;
 }
 
 #txtAddress{
     float: left;
-    width: 220px;
-       height: 30px;
-       margin-bottom: 30px;
+    width: 210px;
+    height: 30px;
+    margin-bottom: 30px;
    }
    
    #txtNumber{
@@ -89,7 +90,7 @@ input::placeholder{
        width: 60px;
        height: 30px;
        margin-bottom: 30px;
-       margin-right: -5px;
+       margin-right: -13px;
    }
 
 

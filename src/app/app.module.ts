@@ -11,6 +11,7 @@ import { RegisterAddressComponent } from './register-address/register-address.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+
 const maskConfig: Partial<IConfig> = {
   validation: false,
 };
