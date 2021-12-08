@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+<<<<<<< HEAD
 #container {
+=======
+
+#container{
+>>>>>>> 54e29703f400d1942cdea8ba64599b1d86df2635
     background: url("../../assets/fundo.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +27,7 @@
     border: 3px solid white;
     padding: 30px;
     margin-left: 38%;
-    margin-top: 5%;
+    margin-top: 7%;
     padding-top: 5%;
     text-align: center;
 }
@@ -37,6 +42,7 @@ input[type=text] {
     background-color: black;
     border: 1px solid white;
     border-radius: 6px;
+    padding-left: 10px;
 }
 
 input[type=button] {
@@ -62,20 +68,26 @@ input::placeholder {
     height: 30px;
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
 
 #txtValidate {
     float: left;
     width: 140px;
+=======
+#txtValidate{
+ float: left;
+ width: 135px;
+>>>>>>> 54e29703f400d1942cdea8ba64599b1d86df2635
     height: 30px;
     margin-bottom: 30px;
 }
 
 #txtCV {
     float: right;
-    width: 140px;
+    width: 135px;
     height: 30px;
     margin-bottom: 30px;
-    margin-right: -5px;
+    margin-right: -12px;
 }
 
 #btnLogar {

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { NgModule } from '@angular/core';
 
+
 const maskConfig: Partial<IConfig> = {
   validation: false,
 };
@@ -16,8 +17,11 @@ const maskConfig: Partial<IConfig> = {
 export class LoginComponent implements OnInit {
 
   title = "Login";
+  NickName: string;
 
-  constructor() { }
+  constructor() {
+    this.NickName = 'NickName';
+   }
 
   ngOnInit(): void {
     // document.body.classList.add("container");
