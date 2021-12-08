@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-<<<<<<< HEAD
 #container {
-=======
-
-#container{
->>>>>>> 54e29703f400d1942cdea8ba64599b1d86df2635
     background: url("../../assets/fundo.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -68,16 +63,10 @@ input::placeholder {
     height: 30px;
     margin-bottom: 30px;
 }
-<<<<<<< HEAD
 
 #txtValidate {
     float: left;
-    width: 140px;
-=======
-#txtValidate{
- float: left;
- width: 135px;
->>>>>>> 54e29703f400d1942cdea8ba64599b1d86df2635
+    width: 135px;
     height: 30px;
     margin-bottom: 30px;
 }
