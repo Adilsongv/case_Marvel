@@ -10,6 +10,7 @@ import { RegisterCardComponent } from './register-card/register-card.component';
 import { RegisterAddressComponent } from './register-address/register-address.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 
 const maskConfig: Partial<IConfig> = {
@@ -24,6 +25,7 @@ const maskConfig: Partial<IConfig> = {
     RegisterComponent,
     RegisterCardComponent,
     RegisterAddressComponent,
+    HomeComponent,
 
   ],
   imports: [

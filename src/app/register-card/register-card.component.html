@@ -4,7 +4,7 @@
         <h1>{{title}}</h1>
 
         <h2>{{data}}</h2>
-        <input type="text" name="txtCardNumber" id="txtCardNumber" placeholder="Card Number" mask="0000-0000-0000-0000">
+        <input type="text" name="txtCardNumber" id="txtCardNumber" placeholder="Card Number" [hiddenInput]="true" mask="0000-0000-0000-0000">
         <br/>
         <input type="text" name="txtValidate" id="txtValidate" placeholder="Validate" mask="00/00">
         
