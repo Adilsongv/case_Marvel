@@ -29,3 +29,16 @@
     padding-top: 31px;
     padding-right: 61px;
 }
+#linha{
+    padding-top: 110px;
+    border:solid 1px red;
+    width: 200px;
+    height: 270px;
+    margin-left: 10%;
+    text-align: center;
+    padding-top: -50px;
+}
+#quadro{
+    display: inline-flexbox;
+    max-width: 50px;
+}

@@ -34,6 +34,7 @@ const maskConfig: Partial<IConfig> = {
     NgxMaskModule.forRoot(maskConfig),
     HttpClientModule,
     FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

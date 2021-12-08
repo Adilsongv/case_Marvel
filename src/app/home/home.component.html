@@ -7,10 +7,14 @@
     
         <table id="quadro">
             <tr *ngFor="let quadrinho of quadrinhosMarvel">
-                <td>{{quadrinho}}</td>
-                
-
+                <td>
+                    <div id="linha">
+                       <img src="{{quadrinho.thumbnail.path}}/portrait_fantastic.{{quadrinho.thumbnail.extension}}"> {{quadrinho.id}} - {{quadrinho.title}} 
+                    </div>
+                 </td>
             </tr>
+         
         </table>
 
+      
     
