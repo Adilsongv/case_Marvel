@@ -5,16 +5,26 @@
         <img src="../../assets/logo.png" id="logo">
     </header>
     
-        <table id="quadro">
-            <tr *ngFor="let quadrinho of quadrinhosMarvel">
+        <!-- <table id="quadro">
+            <tr >
                 <td>
                     <div id="linha">
                        <img src="{{quadrinho.thumbnail.path}}/portrait_fantastic.{{quadrinho.thumbnail.extension}}"> {{quadrinho.id}} - {{quadrinho.title}} 
                     </div>
                  </td>
             </tr>
-         
-        </table>
+        </table> -->
 
+        <div fxFlex fxLayout="column">
+            <div fxLayout="row wrap">
+                <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column"
+                *ngFor="let quadrinho of quadrinhosMarvel" style="padding: 15px;">
+                    <div>
+                        <img src="{{quadrinho.thumbnail.path}}/portrait_fantastic.{{quadrinho.thumbnail.extension}}"/> {{quadrinho.id}} - {{quadrinho.title}} 
+                    </div>
+
+                </div>
+            </div>
+        </div>
       
     
