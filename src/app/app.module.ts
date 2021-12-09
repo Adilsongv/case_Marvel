@@ -11,6 +11,8 @@ import { RegisterAddressComponent } from './register-address/register-address.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+// import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 const maskConfig: Partial<IConfig> = {
@@ -34,6 +36,8 @@ const maskConfig: Partial<IConfig> = {
     NgxMaskModule.forRoot(maskConfig),
     HttpClientModule,
     FormsModule,
+    // FlexLayoutModule
+ 
     
   ],
   providers: [],
