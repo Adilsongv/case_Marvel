@@ -8,9 +8,13 @@ import { MarvelService } from '../services/marvel.service';
 })
 export class HomeComponent implements OnInit {
 
+  public paginaAtual = 1;
+
   constructor(private marvelService: MarvelService) { }
 
   public quadrinhosMarvel: any;
+
+  public vazio: boolean = false;
 
   ngOnInit(): void {
       this.marvelService.chamadaQuadrinhosMarvel().subscribe((resultado: any) =>{
@@ -18,15 +22,5 @@ export class HomeComponent implements OnInit {
         console.log(this.quadrinhosMarvel);
       })
   }
-
-  // ChamaApi(){
-
-  //   this.marvelService.chamadaQuadrinhosMarvel().subscribe((resultado: any) =>{
-  //     if(resultado && resultado.data && resultado.data.results)
-  //       this.quadrinhosMarvel = resultado.data.results;
-  //       console.log(this.quadrinhosMarvel);
-  //   })
-
-  // }
 
 }

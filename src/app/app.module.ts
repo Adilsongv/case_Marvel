@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -37,6 +38,9 @@ const maskConfig: Partial<IConfig> = {
     HttpClientModule,
     FormsModule,
     FlexLayoutModule,
+    MatFormFieldModule,
+    NgxPaginationModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
