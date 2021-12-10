@@ -14,15 +14,19 @@
     background-position: center;
     position: fixed;
 }
+#logout a,
+#profile a{
+    color: white;
+    text-decoration: none;
+}
 
 #profile,
 #logout,
 #titulo{
-
-font-style:normal;
-font-weight:400;
-font-size: 20px;
-line-height: 23px;
+    font-style:normal;
+    font-weight:400;
+    font-size: 20px;
+    line-height: 23px;
 
 
 
@@ -77,7 +81,7 @@ line-height: 23px;
     text-align: center;
     padding-left: 20%;
     padding-top: 10%;
-   
+    
 }
 
 #capa{

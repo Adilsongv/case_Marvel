@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
       this.marvelService.chamadaQuadrinhosMarvel().subscribe((resultado: any) =>{
         this.quadrinhosMarvel = resultado.data.results;
+        debugger
         console.log(this.quadrinhosMarvel);
       })
   }

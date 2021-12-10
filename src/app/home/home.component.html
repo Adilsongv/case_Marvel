@@ -1,7 +1,7 @@
 
     <header id="cabecalho">
         <span id="profile">Profile</span>
-        <span id="logout">Logout</span>
+        <span id="logout"><a routerLink="">Logout</a></span>
         <img src="../../assets/logo.png" id="logo">
     </header>
     
@@ -22,7 +22,7 @@
                         {{quadrinho.title}}
                     </div>
                     <div id="author">
-                        {{quadrinho.id}} Dificil
+                        {{quadrinho.creators.items[0] ? quadrinho.creators.items[0].name : 'Sem autor'}}
                     </div>
                 </div>
             </div>

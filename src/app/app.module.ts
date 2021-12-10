@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { NgxPaginationModule } from 'ngx-pagination';
+import {MatIconModule} from '@angular/material/icon';
+import { PurchaseComponent } from './purchase/purchase.component';
 
 
 
@@ -30,6 +32,7 @@ const maskConfig: Partial<IConfig> = {
     RegisterCardComponent,
     RegisterAddressComponent,
     HomeComponent,
+    PurchaseComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ const maskConfig: Partial<IConfig> = {
     FlexLayoutModule,
     MatFormFieldModule,
     NgxPaginationModule,
+    MatIconModule,
     
   ],
   providers: [],
