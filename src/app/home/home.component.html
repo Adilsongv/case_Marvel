@@ -1,34 +1,32 @@
+<header id="cabecalho">
+    <span id="profile">Profile</span>
+    <span id="logout"><a routerLink="">Logout</a></span>
+    <img src="../../assets/logo.png" id="logo">
+</header>
 
-    <header id="cabecalho">
-        <span id="profile">Profile</span>
-        <span id="logout"><a routerLink="">Logout</a></span>
-        <img src="../../assets/logo.png" id="logo">
-    </header>
-    
-    <div id="titulo">
-        <p>Comic Books</p>
-    </div>
+<div id="titulo">
+    <p>Comic Books</p>
+</div>
 
-     <div id="container">
-         
-        <div fxFlex fxLayout="column">
-            <div fxLayout="row wrap">
-                <div fxFlex="25" fxFlex.md="33" fxFlex.sm="40" fxFlex.xs="100" fxLayout="column"
-                *ngFor="let quadrinho of quadrinhosMarvel | paginate: { itemsPerPage: 12, currentPage: paginaAtual }; let i = index" id="item">
-                    <div  id="imagem">
-                        <img src="{{quadrinho.thumbnail.path}}/portrait_fantastic.{{quadrinho.thumbnail.extension}}" id="capa"/>  
-                    </div>
-                    <div id="title">
-                        {{quadrinho.title}}
-                    </div>
-                    <div id="author">
-                        {{quadrinho.creators.items[0] ? quadrinho.creators.items[0].name : 'Sem autor'}}
-                    </div>
+<div id="container">
+
+    <div fxFlex fxLayout="column">
+        <div fxLayout="row wrap">
+            <div fxFlex="25" fxFlex.md="33" fxFlex.sm="40" fxFlex.xs="100" fxLayout="column" *ngFor="let quadrinho of quadrinhosMarvel | paginate: { itemsPerPage: 12, currentPage: paginaAtual }; let i = index" id="item">
+                <div id="imagem" (click)="goToDetail(quadrinho.id)">
+                    <img src="{{quadrinho.thumbnail.path}}/portrait_fantastic.{{quadrinho.thumbnail.extension}}" id="capa" />
+                </div>
+                <div id="title">
+                    {{quadrinho.title}}
+                </div>
+                <div id="author">
+                    {{quadrinho.creators.items[0] ? quadrinho.creators.items[0].name : 'Sem autor'}}
                 </div>
             </div>
         </div>
-       
-    </div>      
-    <div id="pagina">
-        <pagination-controls (pageChange)="paginaAtual = $event" ></pagination-controls>
     </div>
+
+</div>
+<div id="pagina">
+    <pagination-controls (pageChange)="paginaAtual = $event"></pagination-controls>
+</div>

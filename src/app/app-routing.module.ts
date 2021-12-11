@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'endereco', component: RegisterAddressComponent },
   { path: 'home', component: HomeComponent},
   { path: 'venda', component: PurchaseComponent}
+  // { path: 'detalhe/:id'}
 ];
 
 @NgModule({

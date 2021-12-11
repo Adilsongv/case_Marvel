@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { CepServiceService } from '../cep-service.service';
+import { CepServiceService } from '../services/cep-service.service';
+
 
 @Component({
   selector: 'app-register-address',
