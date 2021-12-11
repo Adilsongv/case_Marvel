@@ -6,6 +6,7 @@ import { RegisterCardComponent } from './register-card/register-card.component';
 import { RegisterAddressComponent } from './register-address/register-address.component';
 import { HomeComponent } from './home/home.component';
 import { PurchaseComponent } from './purchase/purchase.component';
+import { ComicsDetailsComponent } from './comics-details/comics-details.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -13,8 +14,8 @@ const routes: Routes = [
   { path: 'cartao', component: RegisterCardComponent },
   { path: 'endereco', component: RegisterAddressComponent },
   { path: 'home', component: HomeComponent},
-  { path: 'venda', component: PurchaseComponent}
-  // { path: 'detalhe/:id'}
+  { path: 'venda', component: PurchaseComponent},
+  { path: 'detalhe/:id', component: ComicsDetailsComponent}
 ];
 
 @NgModule({

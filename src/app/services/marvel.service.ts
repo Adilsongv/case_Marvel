@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
 import { Md5 } from "ts-md5";
 
@@ -20,13 +21,13 @@ export class MarvelService {
 
     constructor(protected httpClient: HttpClient) { }
 
-    getMarvelComics() {
+    getMarvelComics(): Observable<any> {
 
         return this.httpClient.get<any>(`${this.marvelUrl}/v1/public/comics?ts=${this.timestamp}&apikey=${this.publicKey}&hash=${this.hash}`,
         this.headers)
     }
 
-    getMarvelComicsById(id: string) {
+    getMarvelComicsById(id: string): Observable<any> {
 
         return this.httpClient.get<any>(`${this.marvelUrl}/v1/public/comics/${id}?ts=${this.timestamp}&apikey=${this.publicKey}&hash=${this.hash}`,
         this.headers)
