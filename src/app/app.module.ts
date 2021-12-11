@@ -16,6 +16,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { NgxPaginationModule } from 'ngx-pagination';
 import {MatIconModule} from '@angular/material/icon';
 import { PurchaseComponent } from './purchase/purchase.component';
+import { ComicsDetailsComponent } from './comics-details/comics-details.component';
 
 
 
@@ -33,6 +34,7 @@ const maskConfig: Partial<IConfig> = {
     RegisterAddressComponent,
     HomeComponent,
     PurchaseComponent,
+    ComicsDetailsComponent,
   ],
   imports: [
     BrowserModule,
