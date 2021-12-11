@@ -1,0 +1,8 @@
+{
+    "profile": [
+      { "id": 1, "nickName": "adilsongv", "nome": "adilson", "sobrenome": "valeriano",
+        "email":"adilsongv@gmail.com", "senha": "senha123" , "telefone":"999999999",
+        "cartao":"012345678901","validade":"10/25", "cv":"012", "nome_card":"Adilson G. VAleriano", 
+        "CPF":"01205708891", "CEP":"08760330", "rua":"Jose Antonio da Costa", "Numero":"432", 
+        "complemento":"", "bairro":"Jdim Layr", "cidade":"Mogi das Cruzes"}]
+}

@@ -11,6 +11,12 @@ import { RegisterAddressComponent } from './register-address/register-address.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { NgxPaginationModule } from 'ngx-pagination';
+import {MatIconModule} from '@angular/material/icon';
+import { PurchaseComponent } from './purchase/purchase.component';
+
 
 
 const maskConfig: Partial<IConfig> = {
@@ -26,7 +32,7 @@ const maskConfig: Partial<IConfig> = {
     RegisterCardComponent,
     RegisterAddressComponent,
     HomeComponent,
-
+    PurchaseComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,11 @@ const maskConfig: Partial<IConfig> = {
     NgxMaskModule.forRoot(maskConfig),
     HttpClientModule,
     FormsModule,
+    FlexLayoutModule,
+    MatFormFieldModule,
+    NgxPaginationModule,
+    MatIconModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,6 +5,7 @@ import { Md5 } from "ts-md5";
 
 @Injectable({providedIn: "root"})
 export class MarvelService{
+    
   public marvelUrl = environment.marvelUrl;
   
     constructor(protected httpClient: HttpClient){}

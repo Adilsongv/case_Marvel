@@ -3,17 +3,22 @@
         <div id="box">
             <h1>{{title}}</h1>
             
-            <input type="text" name="txtNick" id="txtNick" placeholder="NickName" mask="AAAAAAAAA" >
+            <mat-form-field appearance="outline">
+                <mat-label>{{title}}</mat-label>
+                <input matInput placeholder="NickName" id="nick"  type="text" s>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
             <br/>
-            <div id="senha">
-                <input type="password" name="txtSenha" id="txtSenha" placeholder="Password" mask="AAAAAAAA">
-                <img src="assets/olho.png" alt="olho" id="olho" onclick="mostrar()">
-            </div>
+            <mat-form-field appearance="outline">
+                <mat-label>{{title}}</mat-label>
+                <input matInput placeholder="NickName" id="senha" type="password" maxlength="10" minlength="4">
+                <mat-icon matSuffix>visibility_off</mat-icon>
+              </mat-form-field>
             <br/>
             <input type="button" name="btnLogar" value="Entrar" id="btnLogar" onclick="logar()"> 
             <br/>
             <div id="registro">
-                <a routerLink="registro" id="btnTestar" > Register </a> <img src="assets/avancar.png" alt="seta direita"> 
+                <a routerLink="registro" id="btnTestar" > Register <img src="assets/avancar.png" alt="seta direita"></a>  
             </div>
         </div>
     </div>
