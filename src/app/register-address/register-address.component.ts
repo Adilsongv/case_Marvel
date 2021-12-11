@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CepServiceService } from '../services/cep-service.service';
 
-
 @Component({
   selector: 'app-register-address',
   templateUrl: './register-address.component.html',

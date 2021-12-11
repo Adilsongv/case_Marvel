@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterAddressComponent } from './register-address/register-address.component';
 import { CepServiceService } from './services/cep-service.service';
 import { MarvelService } from './services/marvel.service';
+import { ComicsDetailsComponent } from './comics-details/comics-details.component';
 
 
 
@@ -36,6 +37,7 @@ const maskConfig: Partial<IConfig> = {
     RegisterAddressComponent,
     HomeComponent,
     PurchaseComponent,
+    ComicsDetailsComponent,
   ],
   imports: [
     BrowserModule,
