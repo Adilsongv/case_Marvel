@@ -14,11 +14,13 @@
     background-position: center;
     position: fixed;
 }
+
 #logout a,
 #profile a{
     color: white;
     text-decoration: none;
 }
+
 
 #profile,
 #logout,
@@ -73,6 +75,7 @@
 }
 #imagem{
     margin-left: 23px;
+    cursor: pointer;
 }
 
 #container{

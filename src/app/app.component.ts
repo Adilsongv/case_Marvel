@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CepServiceService } from './services/cep-service.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,5 @@ import { CepServiceService } from './services/cep-service.service';
 export class AppComponent {
   title = 'marvel';
 
-  
+
 }

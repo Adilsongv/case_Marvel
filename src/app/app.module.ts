@@ -9,7 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterCardComponent } from './register-card/register-card.component';
 import { RegisterAddressComponent } from './register-address/register-address.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -17,6 +17,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import {MatIconModule} from '@angular/material/icon';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { ComicsDetailsComponent } from './comics-details/comics-details.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -46,7 +49,9 @@ const maskConfig: Partial<IConfig> = {
     MatFormFieldModule,
     NgxPaginationModule,
     MatIconModule,
-    
+    MatDialogModule,
+    CommonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -29,7 +29,7 @@
 }
 
 
-input#nick[type=text]{
+input#txtNick[type=text]{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -39,9 +39,9 @@ input#nick[type=text]{
     background-color: black;
     border: 1px solid white;
     border-radius: 6px;
-    padding-left: 10px;
+    padding-left:20px;
 }
-Input#senha[type=password]{
+Input#txtSenha[type=password]{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -51,7 +51,7 @@ Input#senha[type=password]{
     background-color: black;
     border: 1px solid white;
     border-radius: 6px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 input[type=button]{
     font-style: normal;
@@ -70,7 +70,7 @@ input::placeholder{
 
 
 #txtNick, #txtSenha{
-    width: 300px;
+    width: 250px;
     height: 30px;
     margin-bottom: 30px;
 }
@@ -82,11 +82,11 @@ input::placeholder{
     border: none;
 }
 
-#olho{
+/* #olho{
     position: absolute;
     margin-top: -61px;
     margin-left: 120px;
-}
+} */
 
 h1{
     font-style: normal;

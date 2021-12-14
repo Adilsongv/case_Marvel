@@ -4,26 +4,35 @@
         <h1>{{title}}</h1>
 
         <h2>{{data}}</h2>
-        <input type="text" name="txtNick" id="txtNick" placeholder="NickName" mask="AAAAAAAAA">
-        <br/>
-        <input type="text" name="txtFirst" id="txtFirst" placeholder="FirstName" mask="AAAAAAAAA">
-        <br/>
-        <input type="text" name="txtLast" id="txtLast" placeholder="LastName" mask="AAAAAAAAA">
-        <br/>
-        <input type="text" name="txtEmail" id="txtEmail" placeholder="E-mail" mask="A*@A*.SSS" >
-        <br/>
-        <input type="text" name="txtContact" id="txtContact" placeholder="Contact" mask="(00) 00000-0000">
-        <br/>
-        <div id="senha">
-            <input type="password" name="txtSenha" id="txtSenha" placeholder="Password" mask="AAAAAAAAA">
-            <img src="assets/olho.png" alt="olho" id="olho" onclick="mostrar()">
-        </div>
-        <br/>
-        <input type="button" name="btnLogar" value="Continue" id="btnLogar" (click)="logar()"> 
-        <br/>
-        <div id="registro">
-            <a routerLink="" id="btnTestar" > Login </a> <img src="assets/avancar.png" alt="seta direita"> 
-        </div>
+        <form id="formulario" [formGroup]="formGroupProfile" (ngSubmit)="goToCard()">
+        
+            <input type="text" name="txtNick" id="txtNick" placeholder="* NickName" formControlName="NickName" (blur)="validarCampo()" mask="AAAAAAAAA">
+            <br/>
+        
+            <input type="text" name="txtFirst" id="txtFirst" placeholder="* FirstName" formControlName="FirstName"  mask="AAAAAAAAA">
+            <br/>
+        
+            <input type="text" name="txtLast" id="txtLast" placeholder="* LastName" formControlName="LastName" mask="AAAAAAAAA">
+            <br/>
+        
+            <input type="text" name="txtEmail" id="txtEmail" placeholder="* E-mail" formControlName="E-mail" mask="A*@A*.SSS" >
+            <br/>
+        
+            <input type="text" name="txtContact" id="txtContact" placeholder="* Contact" formControlName="Contact" mask="(00) 00000-0000">
+            <br/>
+        
+            <div id="senha">
+                <input type="password" name="txtSenha" id="txtSenha" placeholder="Password" formControlName="Password" mask="AAAAAAAAA">
+                <img src="assets/olho.png" alt="olho" id="olho" onclick="mostrar()">
+            </div>
+            <br/>
+        
+            <input type="button" name="btnLogar" value="Continue" id="btnLogar" (click)="goToCard()"> 
+            <br/>
+            <div id="registro">
+                <a routerLink="" id="btnTestar" > Login </a> <img src="assets/avancar.png" alt="seta direita"> 
+            </div>
+        </form>
     </div>
     
 </div>

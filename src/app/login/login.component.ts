@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import Swal from 'sweetalert2';
+import { LocalStorageService } from '../services/local-storage.service';
+import { Router } from '@angular/router';
 
 
 const maskConfig: Partial<IConfig> = {
@@ -16,10 +19,12 @@ const maskConfig: Partial<IConfig> = {
 export class LoginComponent implements OnInit {
 
   title = "Login";
-  NickName: string;
+  strNickName: string;
+  strPassword: string;
 
-  constructor() {
-    this.NickName = 'NickName';
+  constructor(private route: Router) {
+    this.strNickName = 'txtNickName';
+    this.strPassword = 'txtSenha';
    }
 
   ngOnInit(): void {
@@ -28,6 +33,14 @@ export class LoginComponent implements OnInit {
 
   mostrar(){
     
+  }
+  logar(){
+    if(this.strNickName && this.strPassword){
+       Swal.fire("Usuario ou senha invalidos!");
+    }
+    else{
+      this.route.navigate(['./home'])
+    }  
   }
 
 }

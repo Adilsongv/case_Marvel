@@ -1,26 +1,56 @@
+<header id="cabecalho">
+    <span id="profile">Profile</span>
+    <span id="logout"><a routerLink="">Logout</a></span>
+    <img src="../../assets/logo.png" id="logo">
+</header>
+
+<div id="titulo">
+   <a routerLink="../../home"><img src="../../assets/Vector.png" /> Back to Comic Books</a>
+</div>
+
+
 <div id="container">
     <div id="figura">
-        
+        <img src="{{comics.thumbnail.path}}/portrait_incredible.{{comics.thumbnail.extension}}" id="ImgCapa"/>  
     </div>
-    <div id="titulo">
-        
+
+    <div id="title">
+        {{comics.title}} 
     </div>
-    <div id="publicacao">
-        
+
+    <p id="pPubl">Published :</p>
+    <div id="publisher">
+         {{data | date:'MMMM d y'}}
     </div>
+
+    <P id="pWri">Writer :</P>
     <div id="escritor">
-        
+         {{comics.creators.items[0] ? comics.creators.items[0].name : 'No Data'}}
     </div>
+
+    <p id="pIlus">Penciler :</p>
     <div id="ilustrador">
-        
+         {{comics.creators.items[1] ? comics.creators.items[1].name : 'No Data'}} 
     </div>
+
+    <p id="pCover">Cover Artist :</p>
     <div id="capa">
-        
+         {{comics.creators.items[2] ? comics.creators.items[2].name : 'No Data'}} 
     </div>
+
+    <p id="pDesc">Description</p>
     <div id="descricao">
-        
+        {{comics.description ? comics.description : 'No description' }}
     </div>
+
+    <p id="pCast">Cast :</p>
     <div id="Cast">
-        
+          {{comics.characters.items[0] ? comics.characters.items[0].name : 'No Data'}} 
     </div>
-</div>
+
+    <div id="priceBox">
+        <h2 id="priceTitle">Acquire the Comic</h2>
+        <p id="priceText">Read online or on your iPhone, iPad or Android Device</p>
+        <p id="priceValue">${{comics.prices[0] ? comics.prices[0].price : '$0'}}</p>
+        <input type="button" id="priceButton"  value="Buy Digital Issue" (click)="openDialog()"/>
+    </div>

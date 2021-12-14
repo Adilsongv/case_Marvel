@@ -3,19 +3,14 @@
         <div id="box">
             <h1>{{title}}</h1>
             
-            <mat-form-field appearance="outline">
-                <mat-label>{{title}}</mat-label>
-                <input matInput placeholder="NickName" id="nick"  type="text" s>
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-              </mat-form-field>
+                <input placeholder="NickName" id="txtNick"  type="text" >
+
+                <br/>
+
+                <input placeholder="PassWord" id="txtSenha" type="password" maxlength="10">
+                
             <br/>
-            <mat-form-field appearance="outline">
-                <mat-label>{{title}}</mat-label>
-                <input matInput placeholder="NickName" id="senha" type="password" maxlength="10" minlength="4">
-                <mat-icon matSuffix>visibility_off</mat-icon>
-              </mat-form-field>
-            <br/>
-            <input type="button" name="btnLogar" value="Entrar" id="btnLogar" onclick="logar()"> 
+            <input type="button" name="btnLogar" value="Entrar" id="btnLogar" (click)="logar()"> 
             <br/>
             <div id="registro">
                 <a routerLink="registro" id="btnTestar" > Register <img src="assets/avancar.png" alt="seta direita"></a>  

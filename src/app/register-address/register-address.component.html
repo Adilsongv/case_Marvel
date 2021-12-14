@@ -9,15 +9,15 @@
             <h2>{{data}}</h2>
             <input type="text" name="txtCEP" id="txtCEP" class="form-control" ngModel #cep="ngModel" (blur)="consultarCep($event, f)">
             <br/>
-            <input type="text" name="txtAddress" id="txtAddress" ngModel #logradouro="ngModel"placeholder="Address">
+            <input type="text" name="txtAddress" id="txtAddress" ngModel #logradouro="ngModel" placeholder="Address">
             
             <input type="text" name="txtNumber" id="txtNumber" placeholder="Nº">
             <br/>
             <input type="text" name="txtComplement" id="txtComplement" placeholder="Complement">
             <br/>
-            <input type="text" name="txtDistrict" id="txtDistrict" ngModel #uf="ngModel"placeholder="District">
+            <input type="text" name="txtDistrict" id="txtDistrict" ngModel #uf="ngModel" placeholder="District">
             
-            <input type="text" name="txtCity" id="txtCity" ngModel #cidade="ngModel"placeholder="City">
+            <input type="text" name="txtCity" id="txtCity" ngModel #cidade="ngModel" placeholder="City">
             <br/>
             <input type="button" name="btnLogar" value="Finish" id="btnLogar" onclick="logar()"> 
             <br/>

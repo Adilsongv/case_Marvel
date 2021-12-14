@@ -1,7 +1,29 @@
 #texto{
+    position: absolute;
     text-align: center;
+    padding-left: 110px;
+    padding-top: 42px;
 }
 #box{
-    width: 1px;
-    box-sizing: border-box;
+    
+    width: 438px;
+    height: 181px;
+    left: 294px;
+    top: 517px;
+    background: #F7F8FA;
+    box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.27), 0px 2.27px 3.12px rgba(0, 0, 0, 0.215913), 0px 4.84px 10.0172px rgba(0, 0, 0, 0.169756), 0px -0.42211px 3.62304px rgba(0, 0, 0, 0.115395);
+    border-radius: 20px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+#voltar{
+    position: absolute;
+    text-align: center;
+    padding-left: 410px;
+    padding-top: 5px;
+
 }
